@@ -1,0 +1,79 @@
+{
+	"name": "roblox-ts-game",
+	"globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"Aero": {
+				"$path": "out/Framework/Server"
+			}
+		},
+		"ServerStorage": {
+			"$className": "ServerStorage",
+			"Aero": {
+				"$className": "Folder",
+				"Services": {
+					"$path": "out/Server/Services"
+				},
+				"Modules": {
+					"$path": "out/Server/Modules"
+				}
+			}
+		},
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "include",
+				"node_modules": {
+					"$path": "node_modules/@rbxts"
+				}
+			},
+			"Aero": {
+				"$className": "Folder",
+				"Shared": {
+					"$path": "out/Shared/Modules"
+				},
+				"Internal": {
+					"$path": "out/Framework/Internal"
+				}
+			}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"Aero": {
+					"$className": "Folder",
+					"Internal": {
+						"$path": "out/Framework/client"
+					},
+					"Modules": {
+						"$path": "out/Client/Modules"
+					},
+					"Controllers": {
+						"$path": "out/Client/Controllers"
+					}
+				}
+			}
+		},
+		"Workspace": {
+			"$className": "Workspace",
+			"$properties": {
+				"FilteringEnabled": true
+			}
+		},
+		"HttpService": {
+			"$className": "HttpService",
+			"$properties": {
+				"HttpEnabled": true
+			}
+		},
+		"SoundService": {
+			"$className": "SoundService",
+			"$properties": {
+				"RespectFilteringEnabled": true
+			}
+		}
+	}
+}
